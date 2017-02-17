@@ -1,0 +1,21 @@
+{
+  "name": "gallery-types",
+  "description": "Implements a posts filter powered by the REST API.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "uglifyjs -o ./assets/js/gallery-types-setting.min.js ./assets/js/gallery-types-setting.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wearerequired/gallery-types.git"
+  },
+  "author": "required",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/wearerequired/gallery-types/issues"
+  },
+  "homepage": "https://github.com/wearerequired/gallery-types#readme",
+  "devDependencies": {
+    "uglify-js": "^2.7.5"
+  }
+}
