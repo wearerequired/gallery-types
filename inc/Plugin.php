@@ -107,9 +107,7 @@ class Plugin {
 	 * @return array List of media view settings with 'galleryDefaults' key.
 	 */
 	function gallery_default_shortcode_atts( $settings ) {
-		$settings['galleryDefaults'] = array_merge( (array) $settings['galleryDefaults'], [
-			'type' => $this->get_default_gallery_type(),
-		] );
+		$settings['galleryDefaults']['type'] = $this->get_default_gallery_type();
 
 		return $settings;
 	}
