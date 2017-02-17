@@ -1,0 +1,43 @@
+# Copyright (C) 2017 Gallery Types
+# This file is distributed under the same license as the Gallery Types package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Types 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gallery-types\n"
+"POT-Creation-Date: 2017-02-17 15:06+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: inc/Plugin.php:66
+msgid "Thumbnail Grid"
+msgstr ""
+
+#: inc/Plugin.php:127
+msgid "Type"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Gallery Types"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/wearerequired/gallery-types/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Allows you to define a theme specific gallery type."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "required"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://required.com"
+msgstr ""

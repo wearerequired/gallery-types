@@ -36,8 +36,8 @@ class Plugin {
 	}
 
 	/**
-	 * Registers the script actions if the theme supports more than one
-	 * gallery types.
+	 * Loads textdomain and registers  script actions if the theme supports more than one
+	 * gallery type.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -46,6 +46,8 @@ class Plugin {
 		if ( count( $this->get_gallery_types() ) < 2 ) {
 			return;
 		}
+
+		load_plugin_textdomain( 'gallery-types', false, plugin_basename( PLUGIN_DIR ) . '/languages' );
 
 		add_action( 'wp_enqueue_media', [ $this, 'enqueue_script' ] );
 		add_action( 'print_media_templates', [ $this, 'print_js_template' ] );
