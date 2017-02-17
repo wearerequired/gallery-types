@@ -62,7 +62,10 @@ class Plugin {
 	 */
 	public function get_gallery_types() {
 		return apply_filters( 'gallery_types.types', [
-			'default' => __( 'Thumbnail Grid', 'gallery-types' ),
+			'default' => [
+				'label'            => __( 'Thumbnail Grid', 'gallery-types' ),
+				'supports_columns' => true,
+			],
 		] );
 	}
 
