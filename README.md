@@ -28,6 +28,15 @@ To change the default selected type you can use the `gallery_types.default-type`
 This plugin does not change the ouput of the gallery shortcode. That needs to be part of your theme and could be something like this:
 
 ```php
+/**
+ * Customizes the gallery shortcode output if the type attribute is set to 'slider'.
+ *
+ * @see gallery_shortcode()
+ *
+ * @param string $output The gallery output. Default empty.
+ * @param array  $attr   Attributes of the gallery shortcode.
+ * @return string HTML content to display gallery.
+ */
 function required_gallery_shortcode( $output, $attr ) {
 	$is_slider = false;
 	
