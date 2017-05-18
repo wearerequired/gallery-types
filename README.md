@@ -23,6 +23,42 @@ Once a user selects a type the shortcode will get a new `type` attribute with th
 
 To change the default selected type you can use the `gallery_types.default-type` filter.
 
+### Customize gallery output
+
+This plugin does not change the ouput of the gallery shortcode. That needs to be part of your theme and could be something like this:
+
+```php
+function required_gallery_shortcode( $output, $attr ) {
+	$is_slider = false;
+	
+	// Check if the type attribute is set.
+	if ( isset( $attr['type'] ) && 'slider' === $attr['type'] ) {
+		$is_slider = true;
+	}
+
+	// Return the default gallery if the type attribute isn't set.
+	if ( ! $is_slider ) {
+		remove_filter( 'post_gallery', 'required_gallery_shortcode', 10 );
+		$output = gallery_shortcode( $attr );
+		add_filter( 'post_gallery', 'required_gallery_shortcode', 10, 2 );
+		return $output;
+	}
+
+	// Override shortcode attributes.
+	$attr['size']    = 'thumbnail';
+	$attr['link']    = 'file';
+	$attr['columns'] = 0;
+
+	// Get default gallery output and wrap it in a custom container div.
+	remove_filter( 'post_gallery', 'required_gallery_shortcode', 10 );
+	$output = gallery_shortcode( $attr );
+	add_filter( 'post_gallery', 'required_gallery_shortcode', 10, 2 );
+
+	return "<div class='gallery-slider'>$output</div>";
+}
+add_filter( 'post_gallery', 'required_gallery_shortcode', 10, 2 );
+```
+
 ## Contributing
 
 ### Build Task
