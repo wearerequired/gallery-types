@@ -2,14 +2,25 @@
   "name": "wearerequired/gallery-types",
   "description": "Allows you to define a theme specific gallery type.",
   "type": "wordpress-plugin",
+  "homepage": "https://github.com/wearerequired/gallery-types",
   "license": "GPL-2.0+",
   "authors": [
     {
       "name": "required",
       "email": "info@required.ch",
       "homepage": "https://required.com",
+      "role": "Company"
+    },
+    {
+      "name": "Dominik Schilling",
+      "email": "dominik@required.ch",
       "role": "Developer"
     }
+  ],
+  "keywords": [
+    "wordpress",
+    "gallery",
+    "slider"
   ],
   "require": {
     "php": ">=5.6"
