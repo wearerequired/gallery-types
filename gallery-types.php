@@ -3,7 +3,7 @@
  * Plugin Name: Gallery Types
  * Plugin URI:  https://github.com/wearerequired/gallery-types/
  * Description: Allows you to define a theme specific gallery type.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      required
  * Author URI:  https://required.com
  * License:     GPL-2.0+
