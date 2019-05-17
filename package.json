@@ -3,7 +3,7 @@
   "description": "Implements a posts filter powered by the REST API.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "uglifyjs -o ./assets/js/gallery-types-setting.min.js ./assets/js/gallery-types-setting.js"
+    "build": "uglifyjs -o ./assets/js/gallery-types-setting.min.js ./assets/js/gallery-types-setting.js -c -m"
   },
   "repository": {
     "type": "git",
