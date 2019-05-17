@@ -79,5 +79,5 @@ To update the minfied JavaScript file you need Node.js installed.
 npm install
 
 # to update the file run:
-npm run build:js
+npm run build
 ```
